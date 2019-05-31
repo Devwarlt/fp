@@ -1,0 +1,3 @@
+Referências bibliográficas:
+
+    [1]. "How do I redirect to another webpage?", disponível em: https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage .
