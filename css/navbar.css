@@ -30,9 +30,9 @@ li a:hover {
 }
 
 #boxshadow ul {
-    box-shadow: 5px 5px 5px black
+    box-shadow: 5px 3px 3px grey
 }
 
 #boxshadow li {
-    box-shadow: 3px 10px 10px black
+    box-shadow: 3px 8px 8px grey
 }
