@@ -4,10 +4,101 @@
 <head>
     <meta charset="utf-8" />
     <title>Início - Farmácia Popular</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 
-<!-- TODO: construir a estrutura. -->
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Protótipo</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="inicio.html">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contatos.html">Contatos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="produtos.html">Produtos</a>
+            </li>
+        </ul>
+    </nav>
+    <main role="main">
+        <div id="newsPanel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#newsPanel" data-slide-to="0" class="active"></li>
+                <li data-target="#newsPanel" data-slide-to="1"></li>
+                <li data-target="#newsPanel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Notícia 1</h1>
+                            <p>Descrição 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Notícia 2</h1>
+                            <p>Descrição 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Notícia 3</h1>
+                            <p>Descrição 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#newsPanel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#newsPanel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </main>
+    <div id="table"></div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var rows = 3;
+            var columns = 4;
+            var full = "<table class=\"table text-center\"><tbody>";
+            var inner = "";
 
-<body />
+            for (var row = 1; row <= rows; row++) {
+                inner += "<tr>";
+
+                for (var column = 1; column <= columns; column++)
+                    inner += "<td>linha: " + row + " / coluna: " + column + "</td>";
+
+                inner += "</tr>";
+            }
+
+            full += inner + "</tbody></table>";
+
+            $("#table").html(full);
+        });
+    </script>
+</body>
 
 </html>

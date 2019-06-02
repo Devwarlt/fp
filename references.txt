@@ -1,3 +1,6 @@
 Referências bibliográficas:
 
-    [1]. "How do I redirect to another webpage?", disponível em: https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage .
+    [1]. "How do I redirect to another webpage?", disponível em: https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage ;
+    [2]. "Bootstrap Navigation Bar", disponível em: https://www.w3schools.com/bootstrap/bootstrap_navbar.asp ;
+    [3]. "Examples - Bootstrap", disponível em: https://getbootstrap.com/docs/4.3/examples/ ;
+    [4]. "Borders", disponível em: https://getbootstrap.com/docs/4.1/utilities/borders/ .

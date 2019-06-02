@@ -4,10 +4,51 @@
 <head>
     <meta charset="utf-8" />
     <title>Produtos - Farmácia Popular</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 
-<!-- TODO: construir a estrutura. -->
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Protótipo</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="inicio.html">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contatos.html">Contatos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="produtos.html">Produtos</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="jumbotron container text-center">
+        <div id="table"></div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var rows = 24;
+            var columns = 5;
+            var full = "<table class=\"table text-center\"><tbody>";
+            var inner = "";
 
-<body />
+            for (var row = 1; row <= rows; row++) {
+                inner += "<tr>";
+
+                for (var column = 1; column <= columns; column++)
+                    inner += "<td>linha: " + row + " / coluna: " + column + "</td>";
+
+                inner += "</tr>";
+            }
+
+            full += inner + "</tbody></table>";
+
+            $("#table").html(full);
+        });
+    </script>
+</body>
 
 </html>
