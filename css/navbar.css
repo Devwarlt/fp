@@ -1,36 +1,38 @@
 ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #ed391a;
-  position: fixed;
-  top: 0;
-  width: 99%;
-  margin: 0;
-  padding: 0;
-  line-height: 30px;
-  border-radius: 10px
-	
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #ed391a;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    border-radius: 10px
 }
+
 li {
-	float: left;
-	border-right: 2px solid #4c2a2a;
+    float: left;
+    border-right: 2px solid #4c2a2a
 }
+
 li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  padding: 15px 60px;
-  font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 15px 60px;
+    font-size: 20px
 }
- 
+
 li a:hover {
-  background-color: #f7dc11;
-} 
-#boxshadow ul {
-	box-shadow: 5px 5px 5px black;
-	
+    background-color: #f7dc11
 }
+
+#boxshadow ul {
+    box-shadow: 5px 5px 5px black
+}
+
 #boxshadow li {
-	box-shadow: 3px 10px 10px black;
-^}
+    box-shadow: 3px 10px 10px black
+}
